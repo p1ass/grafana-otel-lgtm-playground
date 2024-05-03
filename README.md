@@ -35,14 +35,23 @@ cd docker-otel-lgtm/examples/go
 while :; do clear; http GET http://localhost:8081/rolldice; sleep 1; done
 ```
 
-### Create Dashboard
+### View Metrics
 
 ```text
 rate(http_server_duration_milliseconds_count[1m])
 rate(http_server_duration_milliseconds_count[$__rate_interval])
 ```
 
-![Grafana Top](images/grafana-dashboard.png)
+![Metrics](images/grafana-dashboard.png)
+
+
+### View Traces
+
+```text
+{.service.name="rolldice"}
+```
+
+![Traces](images/grafana-traces.png)
 
 ## References
 
