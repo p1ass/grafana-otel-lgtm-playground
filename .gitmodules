@@ -1,0 +1,3 @@
+[submodule "docker-otel-lgtm"]
+	path = docker-otel-lgtm
+	url = git@github.com:grafana/docker-otel-lgtm.git
